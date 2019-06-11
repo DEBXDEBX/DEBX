@@ -105,8 +105,8 @@ img {
 }
 #bookMarksContainer div {
   background: var(--primary-green);
-  border-left: 4mm ridge #8141ca;
-  border-bottom: thick double #423e3e;
+  border-left: 4mm ridge #538956;
+  border-bottom: thick double #203c63;
   margin: 20px 7px 20px 7px;
   padding: 5px 10px 5px 10px;
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.7);
@@ -136,7 +136,10 @@ img {
   #navbar ul {
     flex-direction: column;
     text-align: center;
-    font-size: 0.5rem;
+    font-size: 0.6rem;
+  }
+  nav h1 {
+    font-size: 1.5rem;
   }
 }
 /* responsive  heading */
@@ -155,10 +158,22 @@ img {
   .qouteBox {
     flex-direction: column;
   }
-  .center-div {
+  .quoteDiv {
     padding: 16px;
     margin: 40px auto;
     width: 300px;
+    background-color: var(--primary-purple);
+    border-radius: 30px;
+  }
+}
+@media screen and (max-width: 496px) {
+  .qouteBox {
+    flex-direction: column;
+  }
+  .quoteDiv {
+    padding: 16px;
+    margin: 40px auto;
+    width: 200px;
     background-color: var(--primary-purple);
     border-radius: 30px;
   }
