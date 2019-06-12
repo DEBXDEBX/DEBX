@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css?family=Anton|Permanent+Marker&display=swap");
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -60,9 +62,13 @@ a {
 }
 /* Body */
 h1 {
+  font-family: "Anton", sans-serif;
   text-align: center;
 }
-
+hr {
+  border-style: solid;
+  border-color: #55889d;
+}
 /* Showcase */
 #showcase {
   background: #333;
@@ -80,12 +86,16 @@ h1 {
 }
 .lead {
   font-size: 1.3rem;
-  /* background-color: #fff;
-  color: blue; */
+  margin: 1rem;
 }
 #debxImage {
+  margin-left: 40px;
   width: 200px;
   border-radius: 30%;
+}
+#who {
+  display: flex;
+  justify-content: flex-start;
 }
 .quoteDiv {
   padding: 16px;
@@ -113,14 +123,17 @@ h1 {
   border-radius: 10% / 50%;
 }
 #bookMarksContainer div a {
+  font-family: "Permanent Marker", cursive;
   font-weight: bold;
   font-size: 1.5rem;
   color: #212529;
   margin: 8px;
 }
 
-.footer {
-  height: 300px;
+#footer {
+  height: 180px;
+  color: #fff;
+  text-align: center;
 }
 /* responsive  nav */
 @media screen and (max-width: 857px) {
@@ -146,6 +159,12 @@ h1 {
 @media screen and (max-width: 917px) {
   .l-heading {
     font-size: 2rem;
+  }
+}
+/* responsive Who */
+@media screen and (max-width: 923) {
+  #who {
+    flex-direction: column;
   }
 }
 /* responsive  blockquote */
