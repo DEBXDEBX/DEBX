@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Anton|Permanent+Marker&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Handlee|Permanent+Marker&display=swap");
 
 * {
   box-sizing: border-box;
@@ -10,11 +10,6 @@
   --primary-green: rgb(10, 243, 10);
   --primary-blue: #00f;
   --primary-purple: rgba(78, 26, 175);
-}
-/* use Variables */
-h1 {
-  /* color: var(--primary-color);
-  text-shadow: 2px 2px var(--secondary-color); */
 }
 
 /* Nav Bar */
@@ -42,6 +37,8 @@ a {
   background-color: #333;
   color: white;
   padding: 1rem;
+  /* debx img will go on top if you don't have this z index */
+  z-index: 3;
 }
 #navbar h1 {
   margin: 0;
@@ -61,6 +58,9 @@ a {
   color: var(--primary-green);
 }
 /* Body */
+body {
+  background: #333;
+}
 h1 {
   font-family: "Anton", sans-serif;
   text-align: center;
@@ -96,8 +96,17 @@ hr {
 #who {
   display: flex;
   justify-content: flex-start;
+  color: #fff;
 }
+#certificate {
+  width: 50%;
+  margin: 0 auto;
+}
+
 .quoteDiv {
+  font-family: "Handlee", cursive;
+  font-size: 2rem;
+  color: white;
   padding: 16px;
   margin: 40px auto;
   width: 600px;
@@ -162,11 +171,12 @@ hr {
   }
 }
 /* responsive Who */
-@media screen and (max-width: 923) {
+@media screen and (max-width: 923px) {
   #who {
     flex-direction: column;
   }
 }
+
 /* responsive  blockquote */
 @media screen and (max-width: 1346px) {
   .qouteBox {
