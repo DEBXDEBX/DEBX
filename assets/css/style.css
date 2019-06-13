@@ -89,10 +89,12 @@ hr {
   margin: 1rem;
 }
 #debxImage {
-  margin-left: 40px;
+  display: block;
+  margin: 0 auto;
   width: 200px;
   border-radius: 30%;
 }
+
 #who {
   display: flex;
   justify-content: flex-start;
@@ -176,7 +178,13 @@ hr {
     flex-direction: column;
   }
 }
-
+/* responsive debxImage */
+@media screen and (max-width: 1100px) {
+  #debxImage {
+    width: 120px;
+    border-radius: 30%;
+  }
+}
 /* responsive  blockquote */
 @media screen and (max-width: 1346px) {
   .qouteBox {
