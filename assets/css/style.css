@@ -118,6 +118,10 @@ hr {
 .qouteBox {
   display: flex;
 }
+
+#bookMarkWrapper {
+  display: none;
+}
 #bookMarksContainer {
   display: flex;
   flex-wrap: wrap;
