@@ -13,10 +13,7 @@
 }
 
 /* Nav Bar */
-/* #navContainer {
-  display: flex;
-  justify-content: space-between;
-} */
+
 #D {
   color: red;
 }
@@ -244,7 +241,7 @@ hr {
   }
 }
 @media screen and (max-width: 500px) {
-  #home {
+  #navbar {
     flex-direction: column;
   }
 }
