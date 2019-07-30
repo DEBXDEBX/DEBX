@@ -82,7 +82,7 @@ input[type="submit"]:hover {
   color: var(--secondary-color);
   border-color: rgb(233, 27, 181);
 }
-@media screen and (max-width: 650px) {
+/* @media screen and (max-width: 650px) {
   input[type="submit"] {
     margin-top: 33px;
     display: block;
@@ -94,20 +94,25 @@ input[type="submit"]:hover {
     border-radius: 12px;
     border-color: var(--secondary-color);
   }
-}
+} */
 @media screen and (max-width: 475px) {
   #label,
   #tipLabel {
-    font-size: 1rem;
+    font-size: 1.9rem;
+  }
+  input[type="text"] {
+    font-size: 2.5rem;
   }
 }
-@media screen and (max-width: 853px) {
+
+@media screen and (max-width: 850px) {
   input[type="text"] {
-    font-size: 2rem;
+    width: 90%;
   }
-}
-@media screen and (max-width: 600px) {
-  input[type="text"] {
-    font-size: 1rem;
+  input[type="submit"] {
+    width: 90%;
+  }
+  #sliderInput {
+    width: 90%;
   }
 }
