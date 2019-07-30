@@ -41,9 +41,7 @@ a {
   /* debx img will go on top if you don't have this z index */
   z-index: 3;
 }
-#navbar h1 {
-  margin: 0;
-}
+
 #navbar ul {
   display: flex;
   align-items: center;
@@ -63,7 +61,8 @@ a {
 body {
   background: #333;
 }
-h1 {
+h1,
+h2 {
   font-family: "Anton", sans-serif;
   text-align: center;
 }

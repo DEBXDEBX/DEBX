@@ -82,19 +82,7 @@ input[type="submit"]:hover {
   color: var(--secondary-color);
   border-color: rgb(233, 27, 181);
 }
-/* @media screen and (max-width: 650px) {
-  input[type="submit"] {
-    margin-top: 33px;
-    display: block;
-    width: 40%;
-    height: 100px;
-    color: var(--primary-color);
-    background-color: var(--secondary-color);
-    font-size: 2em;
-    border-radius: 12px;
-    border-color: var(--secondary-color);
-  }
-} */
+
 @media screen and (max-width: 475px) {
   #label,
   #tipLabel {
