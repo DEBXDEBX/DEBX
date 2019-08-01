@@ -23,18 +23,26 @@ a {
   --secondary-color: #00f;
 }
 /* use Variables */
-h1 {
+/* h1 {
   color: var(--primary-color);
   text-shadow: 2px 2px var(--secondary-color);
-}
+} */
 
 #title {
+  color: var(--primary-color);
+  text-shadow: 2px 2px var(--secondary-color);
   margin-top: 50px;
   text-align: center;
 }
 
-#label,
+#label {
+  color: var(--primary-color);
+  text-shadow: 2px 2px var(--secondary-color);
+  margin-top: 50px;
+  text-align: center;
+}
 #tipLabel {
+  color: red;
   margin-top: 50px;
   text-align: center;
 }
