@@ -6,8 +6,12 @@ let label = document.querySelector("#label");
 let tipLabel = document.querySelector("#tipLabel");
 let btn = document.querySelector("#btn");
 let slider = document.querySelector("#sliderInput");
+let sliderAudio = document.querySelector("#sliderAudio");
+let btnAudio = document.querySelector("#btnAudio");
+let numbersOnlyAudio = document.querySelector("#numbersOnlyAudio");
 
 slider.addEventListener("change", () => {
+  sliderAudio.play();
   switch (Number(slider.value)) {
     case 10:
       percentage = 0.1;
@@ -75,6 +79,7 @@ slider.addEventListener("change", () => {
 
 function tipAmount() {
   if (isNaN(Number(billAmount.value))) {
+    numbersOnlyAudio.play();
     tipLabel.textContent = `Please enter numbers only`;
     return;
   }
@@ -84,5 +89,6 @@ function tipAmount() {
 
 btn.addEventListener("click", e => {
   e.preventDefault();
+  btnAudio.play();
   tipAmount();
 });
