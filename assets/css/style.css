@@ -32,7 +32,7 @@ a {
 #navbar {
   display: flex;
   justify-content: space-between;
-  position: sticky;
+  /* position: sticky; */
   top: 0;
   z-index: 1;
   background-color: #333;
