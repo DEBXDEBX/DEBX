@@ -157,9 +157,14 @@ hr {
 }
 
 #footer {
+  display: flex;
+  justify-content: center;
   height: 180px;
   color: #fff;
   text-align: center;
+}
+.clown {
+  width: 80px;
 }
 /* responsive  nav */
 @media screen and (max-width: 933px) {
