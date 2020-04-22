@@ -26,6 +26,9 @@
 #navbar h1 span {
   display: inline;
 }
+#spinX:hover {
+  cursor: pointer;
+}
 a {
   text-decoration: none;
 }
