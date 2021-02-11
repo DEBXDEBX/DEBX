@@ -11,6 +11,9 @@
   --primary-blue: #00f;
   --primary-purple: rgba(78, 26, 175);
 }
+html {
+  scroll-behavior: smooth;
+}
 
 /* Nav Bar */
 
