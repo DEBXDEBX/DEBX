@@ -176,6 +176,10 @@ hr {
 .clown {
   width: 75px;
 }
+.quoteWrapper {
+  display: none;
+}
+
 /* responsive  nav */
 @media screen and (max-width: 933px) {
   #navbar ul {
