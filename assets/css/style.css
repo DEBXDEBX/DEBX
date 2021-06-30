@@ -8,8 +8,9 @@
 /* Create Variables */
 :root {
   --primary-green: rgb(10, 243, 10);
-  --primary-blue: #00f;
-  --primary-purple: rgba(78, 26, 175);
+  --primary-blue: #177bdf;
+  --primary-pink: #f805b1;
+  --blue-color: #0d3bef;
 }
 html {
   scroll-behavior: smooth;
@@ -17,20 +18,21 @@ html {
 
 /* Nav Bar */
 
-#D {
-  color: red;
+.navImage {
+  width: 200px;
 }
-#E {
-  color: var(--primary-green);
+.navContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-#B {
-  color: var(--primary-blue);
-}
-#navbar h1 span {
-  display: inline;
+
+#spinX {
+  color: var(--blue-color);
 }
 #spinX:hover {
   cursor: pointer;
+  color: var(--primary-pink);
 }
 a {
   text-decoration: none;
@@ -38,12 +40,12 @@ a {
 #navbar {
   display: flex;
   justify-content: space-between;
-  margin-top: 1rem;
+  /* margin-top: 1rem; */
   /* position: sticky; */
   top: 0;
   z-index: 1;
-  background-color: #333;
-  color: white;
+  background-color: #fff;
+  color: rgb(20, 19, 19);
   padding: 1rem;
   /* debx img will go on top if you don't have this z index */
   z-index: 3;
@@ -56,7 +58,7 @@ a {
   margin: 0;
 }
 #navbar ul li a {
-  color: #fff;
+  color: var(--primary-blue);
   padding: 0.75rem;
   margin: 0 0.8rem;
   font-size: 2rem;
@@ -66,7 +68,7 @@ a {
 }
 /* Body */
 body {
-  background: #333;
+  background: #fff;
 }
 h1,
 h2 {
@@ -79,8 +81,8 @@ hr {
 }
 /* Showcase */
 #showcase {
-  background: #333;
-  color: white;
+  background: #fff;
+  color: var(--primary-blue);
 }
 
 #showcase .showcase-content {
@@ -96,13 +98,7 @@ hr {
   font-size: 1.3rem;
   margin: 1rem;
   text-align: center;
-  color: #07f1f8;
-}
-#debxImage {
-  display: block;
-  margin: 0 auto;
-  width: 200px;
-  border-radius: 30%;
+  color: var(--primary-blue);
 }
 
 #certificate {
@@ -129,9 +125,9 @@ hr {
   padding: 16px;
   margin: 40px auto;
   width: 600px;
-  background-color: var(--primary-purple);
+  background-color: var(--primary-blue);
   border-radius: 30px;
-  box-shadow: 5px 4px 20px 16px rgb(10 10 10);
+  box-shadow: 12px 10px 20px 0px rgb(10 10 10);
 }
 hr {
   box-shadow: 6px 4px 8px 3px rgb(10 10 10);
@@ -147,12 +143,12 @@ hr {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  background: #333;
+  background: #fff;
 }
 #bookMarksContainer div {
-  background: var(--primary-green);
-  border-left: 4mm ridge #538956;
-  border-bottom: thick double #203c63;
+  background: var(--blue-color);
+  border-left: 4mm ridge #2149d8;
+  border-bottom: thick double #2a74dd;
   margin: 20px 7px 20px 7px;
   padding: 5px 10px 5px 10px;
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.7);
@@ -162,10 +158,13 @@ hr {
   font-family: "Permanent Marker", cursive;
   font-weight: bold;
   font-size: 1.5rem;
-  color: #212529;
+  color: #fff;
   margin: 8px;
+  text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.7);
 }
-
+#bookMarksContainer div a:hover {
+  color: var(--primary-pink);
+}
 #footer {
   display: flex;
   justify-content: center;
@@ -265,7 +264,6 @@ hr {
 }
 @media screen and (max-width: 1000px) {
   .emailDiv h1 {
-    color: green;
     font-size: 1.25rem;
   }
 }
