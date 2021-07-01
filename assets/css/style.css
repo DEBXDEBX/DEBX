@@ -20,19 +20,23 @@ html {
 
 .navImage {
   width: 200px;
+  border-radius: 30%;
 }
 .navContainer {
   display: flex;
   align-items: center;
   justify-content: center;
 }
-
+.spinXcontainer {
+  margin-left: 1rem;
+}
 #spinX {
-  color: var(--blue-color);
+  color: #fff;
+  width: 2rem;
 }
 #spinX:hover {
   cursor: pointer;
-  color: var(--primary-pink);
+  color: #000;
 }
 a {
   text-decoration: none;
@@ -44,7 +48,7 @@ a {
   /* position: sticky; */
   top: 0;
   z-index: 1;
-  background-color: #fff;
+  background-color: var(--blue-color);
   color: rgb(20, 19, 19);
   padding: 1rem;
   /* debx img will go on top if you don't have this z index */
@@ -64,7 +68,7 @@ a {
   font-size: 2rem;
 }
 #navbar ul li a:hover {
-  color: var(--primary-green);
+  color: #fff;
 }
 /* Body */
 body {
@@ -74,6 +78,12 @@ h1,
 h2 {
   font-family: "Anton", sans-serif;
   text-align: center;
+}
+a {
+  color: var(--blue-color);
+}
+a:hover {
+  color: var(--primary-pink);
 }
 hr {
   border-style: solid;
@@ -92,6 +102,7 @@ hr {
   align-items: center;
 }
 .l-heading {
+  margin-top: 2rem;
   font-size: 4rem;
 }
 .myName {
@@ -125,7 +136,7 @@ hr {
   padding: 16px;
   margin: 40px auto;
   width: 600px;
-  background-color: var(--primary-blue);
+  background-color: var(--blue-color);
   border-radius: 30px;
   box-shadow: 12px 10px 20px 0px rgb(10 10 10);
 }
@@ -174,6 +185,7 @@ hr {
 }
 .clown {
   width: 75px;
+  cursor: pointer;
 }
 .quoteWrapper {
   display: none;
@@ -200,7 +212,7 @@ hr {
   }
   #home ul li a {
     font-size: 1rem;
-    color: red;
+    /* color: red; */
   }
   nav h1 {
     font-size: 2rem;
@@ -244,7 +256,6 @@ hr {
   .quoteDiv {
     padding: 16px;
     margin: 40px auto;
-    background-color: var(--primary-purple);
     border-radius: 30px;
   }
 }
@@ -255,7 +266,6 @@ hr {
   .quoteDiv {
     padding: 16px;
     margin: 40px auto;
-    background-color: var(--primary-purple);
     border-radius: 30px;
   }
   #certificate {
@@ -271,12 +281,17 @@ hr {
   #navbar {
     flex-direction: column;
   }
+  .navContainer {
+    flex-direction: column;
+  }
+  .spinXcontainer {
+    margin: 1rem;
+  }
   nav h1 {
     font-size: 3rem;
   }
   #home ul li a {
     font-size: 1.5rem;
-    color: red;
     margin-top: 20px;
   }
 }
