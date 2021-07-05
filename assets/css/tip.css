@@ -9,7 +9,7 @@
 /* Main Styling */
 html,
 body {
-  background-color: black;
+  /* background-color: black; */
   color: white;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.7em;
@@ -19,8 +19,8 @@ a {
 }
 /* Create Variables */
 :root {
-  --primary-color: #0f0;
-  --secondary-color: #00f;
+  /* --primary-color: #000; */
+  /* --secondary-color: #00f; */
 }
 /* use Variables */
 /* h1 {
@@ -30,14 +30,13 @@ a {
 
 #title {
   color: var(--primary-color);
-  text-shadow: 2px 2px var(--secondary-color);
   margin-top: 50px;
   text-align: center;
 }
 
 #label {
-  color: var(--primary-color);
-  text-shadow: 2px 2px var(--secondary-color);
+  color: #00f;
+  /* text-shadow: 2px 2px var(--secondary-color); */
   margin-top: 50px;
   text-align: center;
 }
@@ -80,16 +79,17 @@ input[type="submit"] {
   display: block;
   width: 40%;
   height: 100px;
-  color: var(--primary-color);
-  background-color: var(--secondary-color);
+  outline: none;
+  color: white;
+  background-color: #00f;
   font-size: 3.5em;
   border-radius: 12px;
   border-color: var(--secondary-color);
 }
 input[type="submit"]:hover {
-  background-color: rgb(238, 121, 75);
+  background-color: rgb(48, 39, 182);
   color: white;
-  border-color: rgb(238, 121, 75);
+  /* border-color: rgb(238, 121, 75); */
 }
 
 @media screen and (max-width: 475px) {
@@ -129,7 +129,7 @@ input[type="range"]::-webkit-slider-runnable-track {
   cursor: pointer;
   animate: 0.2s;
   box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
-  background: #3071a9;
+  background: #00f;
   border-radius: 1.3px;
   border: 0.2px solid #010101;
 }
@@ -145,7 +145,7 @@ input[type="range"]::-webkit-slider-thumb {
   margin-top: -14px;
 }
 input[type="range"]:focus::-webkit-slider-runnable-track {
-  background: #367ebd;
+  background: #00f;
 }
 input[type="range"]::-moz-range-track {
   width: 100%;
@@ -153,7 +153,7 @@ input[type="range"]::-moz-range-track {
   cursor: pointer;
   animate: 0.2s;
   box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
-  background: #3071a9;
+  background: #00f;
   border-radius: 1.3px;
   border: 0.2px solid #010101;
 }
@@ -177,13 +177,13 @@ input[type="range"]::-ms-track {
   color: transparent;
 }
 input[type="range"]::-ms-fill-lower {
-  background: #2a6495;
+  background: #00f;
   border: 0.2px solid #010101;
   border-radius: 2.6px;
   box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
 }
 input[type="range"]::-ms-fill-upper {
-  background: #3071a9;
+  background: #00f;
   border: 0.2px solid #010101;
   border-radius: 2.6px;
   box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
@@ -198,8 +198,8 @@ input[type="range"]::-ms-thumb {
   cursor: pointer;
 }
 input[type="range"]:focus::-ms-fill-lower {
-  background: #3071a9;
+  background: #00f;
 }
 input[type="range"]:focus::-ms-fill-upper {
-  background: #367ebd;
+  background: #00f;
 }
