@@ -14,6 +14,3 @@ clown.addEventListener("click", (e) => {
   clickAudio.play();
   $(quoteWrapper).slideToggle("slow");
 });
-
-document.childElementCount;
-console.log(document.childElementCount);
