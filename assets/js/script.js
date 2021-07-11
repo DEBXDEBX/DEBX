@@ -7,9 +7,13 @@ let quoteWrapper = document.querySelector("#quoteWrapper");
 spinX.addEventListener("click", (e) => {
   clickAudio.play();
   $(bookMarkWrapper).slideToggle("slow");
+  window.scrollTo(0, 0);
 });
 
 clown.addEventListener("click", (e) => {
   clickAudio.play();
   $(quoteWrapper).slideToggle("slow");
 });
+
+document.childElementCount;
+console.log(document.childElementCount);
