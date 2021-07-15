@@ -30,7 +30,7 @@ a {
 }
 
 #label {
-  color: #00f;
+  color: hsl(240deg 100% 50%);
   /* text-shadow: 2px 2px var(--secondary-color); */
   margin-top: 50px;
   text-align: center;
@@ -76,17 +76,20 @@ input[type="submit"] {
   height: 100px;
   outline: none;
   color: white;
-  background-color: #00f;
+  background-color: hsl(240deg 100% 50%);
   font-size: 3.5em;
   border-radius: 12px;
   border-color: var(--secondary-color);
 }
 input[type="submit"]:hover {
-  background-color: rgb(48, 39, 182);
+  background-color: hsl(240deg 100% 25%);
   color: white;
   /* border-color: rgb(238, 121, 75); */
 }
 
+input[type="submit"]:active {
+  transform: scale(0.98);
+}
 @media screen and (max-width: 475px) {
   #label,
   #tipLabel {
