@@ -37,7 +37,6 @@ html {
 }
 #spinX:hover {
   cursor: pointer;
-  color: #000;
 }
 a {
   text-decoration: none;
@@ -63,14 +62,21 @@ a {
   margin: 0;
 }
 #navbar ul li a {
-  color: var(--primary-blue);
+  color: rgb(142, 169, 248);
   padding: 0.75rem;
-  margin: 0 0.8rem;
+  /* margin: 0 0.8rem; */
   font-size: 1rem;
+  font-weight: bolder;
+  text-decoration: none;
 }
-#navbar ul li a:hover {
+#navbar ul li {
+  padding: 1rem;
+}
+#navbar ul li:hover a {
   color: #fff;
+  border-bottom: 4px solid white;
 }
+
 /* Body */
 body {
   background: #fff;
