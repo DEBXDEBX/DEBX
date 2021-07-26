@@ -64,7 +64,6 @@ a {
 #navbar ul li a {
   color: rgb(142, 169, 248);
   padding: 0.75rem;
-  /* margin: 0 0.8rem; */
   font-size: 1rem;
   font-weight: bolder;
   text-decoration: none;
@@ -169,8 +168,15 @@ hr {
   border-bottom: thick double #2a74dd;
   margin: 20px 7px 20px 7px;
   padding: 5px 10px 5px 10px;
-  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.7);
   border-radius: 10% / 50%;
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.7);
+  transition: color 0.6s, box-shadow 0.7s, transform 0.7s;
+  transition-timing-function: cubic-bezier(0.45, 1.87, 0.62, 1.6);
+}
+#bookMarksContainer div:hover {
+  text-shadow: 0px 0px 0px rgba(0, 0, 0, 0.7);
+  transform: scale(1.1);
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.7);
 }
 #bookMarksContainer div a {
   font-family: "Permanent Marker", cursive;
@@ -179,10 +185,9 @@ hr {
   color: #fff;
   margin: 8px;
   text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.7);
+  text-decoration: none;
 }
-#bookMarksContainer div a:hover {
-  color: var(--primary-pink);
-}
+
 #footer {
   display: flex;
   justify-content: center;
