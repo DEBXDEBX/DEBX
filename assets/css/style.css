@@ -53,6 +53,7 @@ a {
   padding: 1rem;
   /* debx img will go on top if you don't have this z index */
   z-index: 3;
+  box-shadow: 2px 2px 2px 0px;
 }
 
 #navbar ul {
