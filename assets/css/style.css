@@ -7,9 +7,6 @@
 }
 /* Create Variables */
 :root {
-  --primary-green: rgb(10, 243, 10);
-  --primary-blue: #177bdf;
-  --primary-pink: #f805b1;
   --blue-color: #0d3bef;
 }
 html {
@@ -21,6 +18,7 @@ html {
 .navImage {
   width: 122px;
   border-radius: 30%;
+  cursor: pointer;
 }
 .navContainer {
   display: flex;
@@ -32,7 +30,7 @@ html {
 }
 #spinX {
   color: #fff;
-  width: 2rem;
+  /* width: 2rem; */
   font-size: 1.5rem;
 }
 #spinX:hover {
@@ -64,7 +62,8 @@ a {
 }
 #navbar ul li a {
   color: rgb(142, 169, 248);
-  padding: 0.75rem;
+  padding: 0.1rem;
+  margin: 0.1rem;
   font-size: 1rem;
   font-weight: bolder;
   text-decoration: none;
@@ -96,6 +95,39 @@ hr {
   border-style: solid;
   border-color: #55889d;
 }
+
+@media screen and (max-width: 788px) {
+  .spinXcontainer {
+    margin-left: 0;
+  }
+  #spinX {
+    font-size: 0.9rem;
+  }
+  #navbar {
+    flex-direction: column;
+    padding: 5px;
+  }
+  #navbar ul {
+    flex-direction: column;
+  }
+  #navbar ul li {
+    padding: 0px;
+    margin: 0px;
+  }
+  #navbar ul li a {
+    font-size: 0.6rem;
+  }
+  .navImage {
+    width: 60px;
+  }
+  .navContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+}
+
 /* Showcase */
 #showcase {
   background: #fff;
@@ -206,10 +238,6 @@ hr {
 
 /* responsive  nav */
 @media screen and (max-width: 933px) {
-  #navbar ul {
-    flex-direction: column;
-    text-align: center;
-  }
   #navbar {
     position: static;
   }
@@ -221,11 +249,7 @@ hr {
   #navbar ul {
     flex-direction: column;
     text-align: center;
-    font-size: 0.6rem;
-  }
-  #home ul li a {
-    font-size: 1rem;
-    /* color: red; */
+    /* font-size: 0.6rem; */
   }
   nav h1 {
     font-size: 2rem;
@@ -288,23 +312,5 @@ hr {
 @media screen and (max-width: 1000px) {
   .emailDiv h1 {
     font-size: 1.25rem;
-  }
-}
-@media screen and (max-width: 500px) {
-  #navbar {
-    flex-direction: column;
-  }
-  .navContainer {
-    flex-direction: column;
-  }
-  .spinXcontainer {
-    margin: 1rem;
-  }
-  nav h1 {
-    font-size: 3rem;
-  }
-  #home ul li a {
-    font-size: 1.5rem;
-    margin-top: 20px;
   }
 }
