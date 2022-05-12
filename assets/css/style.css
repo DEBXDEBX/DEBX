@@ -30,7 +30,6 @@ html {
 }
 #spinX {
   color: #fff;
-  /* width: 2rem; */
   font-size: 1.5rem;
 }
 #spinX:hover {
@@ -90,10 +89,6 @@ a {
 }
 a:hover {
   color: var(--primary-pink);
-}
-hr {
-  border-style: solid;
-  border-color: #55889d;
 }
 
 @media screen and (max-width: 788px) {
@@ -179,9 +174,7 @@ hr {
   border-radius: 30px;
   box-shadow: 12px 10px 20px 0px rgb(10 10 10);
 }
-hr {
-  box-shadow: 6px 4px 8px 3px rgb(10 10 10);
-}
+
 .qouteBox {
   display: flex;
 }
@@ -217,16 +210,39 @@ hr {
   font-size: 1.5rem;
   color: #fff;
   margin: 8px;
-  text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.7);
+  text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.7); 
   text-decoration: none;
 }
 
+#appDiv {
+  background-color: var(--blue-color);
+  padding: 40px 20px;
+}
+.appHeader {
+  color: white;
+  padding: 40px;
+}
+#appDiv h2 {
+  padding: 10px;
+  margin-bottom: 0px;
+}
+#appDiv h2 a {
+  color: white;
+}
 #footer {
   display: flex;
   justify-content: center;
-  height: 180px;
   color: #fff;
   text-align: center;
+  background-color: var(--blue-color);
+  background-image: linear-gradient(var(--blue-color), black);
+  padding: 30px;
+}
+#footer div h6 a {
+  color: white;
+}
+#footer div h6 {
+  padding: 10px;
 }
 .clown {
   width: 75px;
