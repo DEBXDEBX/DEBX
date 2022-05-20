@@ -90,6 +90,9 @@ a {
 a:hover {
   color: var(--primary-pink);
 }
+.l-heading{
+  color: var(--blue-color);
+}
 
 @media screen and (max-width: 788px) {
   .spinXcontainer {
@@ -143,7 +146,7 @@ a:hover {
   font-size: 1.3rem;
   margin: 1rem;
   text-align: center;
-  color: var(--primary-blue);
+  color: var(--blue-color);
 }
 
 #certificate {
@@ -160,7 +163,7 @@ a:hover {
 }
 .emailDiv h1 {
   margin-top: 44px;
-  color: red;
+  color: var(--blue-color)
 }
 
 .quoteDiv {
@@ -218,9 +221,22 @@ a:hover {
   background-color: var(--blue-color);
   padding: 40px 20px;
 }
+.appHeaderContainer {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+ 
+}
+.flexItemHeader {
+  background-color: white; 
+  border-radius: 5px;
+}
 .appHeader {
-  color: white;
-  padding: 40px;
+  color: var(--blue-color);
+  font-family: cursive;
+  font-weight: bolder;
+  padding: 10px;
+  margin: 0;
 }
 #appDiv h2 {
   padding: 10px;
