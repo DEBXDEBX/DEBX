@@ -27,6 +27,10 @@ html {
 }
 .spinXcontainer {
   margin-left: 1rem;
+  transition: transform 0.7s;
+}
+.spinXcontainer:hover{
+  transform: scale(1.7);
 }
 #spinX {
   color: #fff;
