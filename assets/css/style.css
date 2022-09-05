@@ -73,12 +73,16 @@ a {
 }
 #navbar ul li {
   padding: 1rem;
+  transition: transform 0.7s;
+  transition-timing-function: cubic-bezier(0.45, 1.87, 0.62, 1.6);
 }
 #navbar ul li:hover a {
   color: #fff;
   border-bottom: 4px solid white;
 }
-
+#navbar ul li:hover{
+  transform: translateY(-10%);
+}
 /* Body */
 body {
   background: #fff;
@@ -88,6 +92,7 @@ h2 {
   font-family: "Anton", sans-serif;
   text-align: center;
 }
+
 a {
   color: var(--blue-color);
 }
@@ -245,9 +250,19 @@ a:hover {
 #appDiv h2 {
   padding: 10px;
   margin-bottom: 0px;
+  transition: transform 0.7s;
+  transition-timing-function: cubic-bezier(0.45, 1.87, 0.62, 1.6);
+}
+#appDiv h2:hover {
+transform: translateY(-10%);
 }
 #appDiv h2 a {
   color: white;
+  text-decoration: none;
+  padding-bottom: 0.25rem;
+}
+#appDiv h2 a:hover {
+  border-bottom: 4px solid white;
 }
 #footer {
   display: flex;
@@ -264,9 +279,18 @@ a:hover {
 #footer div h6 {
   padding: 10px;
 }
+/* .clown {
+  width: 75px;
+  cursor: pointer;
+} */
 .clown {
   width: 75px;
   cursor: pointer;
+  transition: transform 0.7s;
+  transition-timing-function: cubic-bezier(0.45, 1.87, 0.62, 1.6);
+}
+.clown:hover {
+  transform: translateY(-10%);
 }
 .quoteWrapper {
   display: none;
