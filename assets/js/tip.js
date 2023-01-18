@@ -79,15 +79,16 @@ slider.addEventListener("change", () => {
 
 function tipAmount() {
   if (isNaN(Number(billAmount.value))) {
-    numbersOnlyAudio.play();
     tipLabel.textContent = `Please enter numbers only`;
     return;
   }
   let tip = Number(billAmount.value) * percentage;
-  tipLabel.textContent = `The Tip is $${tip.toFixed(2)}`;
+  tipLabel.textContent = `The Tip is $${tip.toFixed(2)} Total: $${(
+    tip + Number(billAmount.value)
+  ).toFixed(2)}`;
 }
 
-btn.addEventListener("click", e => {
+btn.addEventListener("click", (e) => {
   e.preventDefault();
   btnAudio.play();
   tipAmount();
