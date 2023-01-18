@@ -10,7 +10,7 @@
 html,
 body {
   /* background-color: black; */
-  color: white;
+  /* color: white; */
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.7em;
 }
@@ -38,6 +38,11 @@ a {
 #tipLabel {
   color: red;
   margin-top: 50px;
+  text-align: center;
+}
+#totalLabel {
+  color: green;
+  margin-top: 10px;
   text-align: center;
 }
 #sliderContainer {

@@ -4,6 +4,7 @@ let billAmount = document.querySelector("#billAmount");
 let labelValue;
 let label = document.querySelector("#label");
 let tipLabel = document.querySelector("#tipLabel");
+let totalLabel = document.querySelector("#totalLabel");
 let btn = document.querySelector("#btn");
 let slider = document.querySelector("#sliderInput");
 let sliderAudio = document.querySelector("#sliderAudio");
@@ -80,12 +81,15 @@ slider.addEventListener("change", () => {
 function tipAmount() {
   if (isNaN(Number(billAmount.value))) {
     tipLabel.textContent = `Please enter numbers only`;
+    totalLabel.textContent = "";
     return;
   }
   let tip = Number(billAmount.value) * percentage;
-  tipLabel.textContent = `The Tip is $${tip.toFixed(2)} Total: $${(
-    tip + Number(billAmount.value)
-  ).toFixed(2)}`;
+  tipLabel.textContent = `The Tip is $${tip.toFixed(2)}`;
+  console.log(totalLabel);
+  totalLabel.textContent = `Total: $${(tip + Number(billAmount.value)).toFixed(
+    2
+  )}`;
 }
 
 btn.addEventListener("click", (e) => {
