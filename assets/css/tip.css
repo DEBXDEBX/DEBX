@@ -41,10 +41,16 @@ a {
   text-align: center;
  
 }
+#totalWord {
+  color: green;
+  margin-top: 40px;
+ text-align: center;
+   font-size: 60px;
+}
 #totalLabel {
   color: green;
-  margin-top: 20px;
-  text-align: center;
+  margin-top: 40px;
+ text-align: center;
    font-size: 60px;
 }
 #sliderContainer {
